@@ -1,5 +1,71 @@
 # Changelog
 
+## [0.8.0](https://github.com/vsiravar/common-tests-public/compare/v0.7.7...v0.8.0) (2023-10-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* StdOut,StdErr -> Stdout,Stderr ([#20](https://github.com/vsiravar/common-tests-public/issues/20))
+
+### refactor
+
+* StdOut,StdErr -&gt; Stdout,Stderr ([#20](https://github.com/vsiravar/common-tests-public/issues/20)) ([92fab5a](https://github.com/vsiravar/common-tests-public/commit/92fab5a416075c802c2aaeef00e4ae263ff36aed))
+
+
+### Features
+
+* add additional tests for env vars ([#26](https://github.com/vsiravar/common-tests-public/issues/26)) ([d3b48e2](https://github.com/vsiravar/common-tests-public/commit/d3b48e238cbb43e790d29bf33cb6d1adb39a2e16))
+* add e2e tests for resource and user flags ([#5](https://github.com/vsiravar/common-tests-public/issues/5)) ([1d5ec0d](https://github.com/vsiravar/common-tests-public/commit/1d5ec0db09b523f47f9825ef7237ed1d9c51401a))
+* add tests for finch cp ([#11](https://github.com/vsiravar/common-tests-public/issues/11))  ([3f64815](https://github.com/vsiravar/common-tests-public/commit/3f648152f1fdb93f88b668958601bb668bed6cbf))
+* add tests for host-gateway speciap IP with equal sign ([#33](https://github.com/vsiravar/common-tests-public/issues/33)) ([1296336](https://github.com/vsiravar/common-tests-public/commit/1296336de63e3ac88c7d22acde97cc100d42b075))
+* add tests for special IP in --add-host flag ([#29](https://github.com/vsiravar/common-tests-public/issues/29)) ([1fecd9f](https://github.com/vsiravar/common-tests-public/commit/1fecd9f5cb00982c88f2367eebdf4a78ad918c9c))
+* Tests for bind mounts ([#66](https://github.com/vsiravar/common-tests-public/issues/66)) ([22a7f7e](https://github.com/vsiravar/common-tests-public/commit/22a7f7e7bd917e443aa47aaa9eaa5dac03a5a10b))
+* verify the result of finch inspect has State.Status and State.Error ([#64](https://github.com/vsiravar/common-tests-public/issues/64)) ([b761a7a](https://github.com/vsiravar/common-tests-public/commit/b761a7ab19fe15e0d0bf34441fad1248ac6b3e83))
+
+
+### Bug Fixes
+
+* --pid=host tests ([#8](https://github.com/vsiravar/common-tests-public/issues/8)) ([77342d8](https://github.com/vsiravar/common-tests-public/commit/77342d8745bbb185bea2445cc150c0ff2dca0056))
+* add --all to volume prune tests ([#87](https://github.com/vsiravar/common-tests-public/issues/87)) ([9248bec](https://github.com/vsiravar/common-tests-public/commit/9248bec81bbbd68b588a746bc409cd7b2c41ae03))
+* add retry to assert containers do not exist for compose down ([#73](https://github.com/vsiravar/common-tests-public/issues/73)) ([88f732f](https://github.com/vsiravar/common-tests-public/commit/88f732f12979b0064b852812db4b48affedf5e4c))
+* adds --all to the volume prune command to prune named volumes ([#86](https://github.com/vsiravar/common-tests-public/issues/86)) ([4973e9f](https://github.com/vsiravar/common-tests-public/commit/4973e9fa956b1339fa282d065576b417acfe2c52))
+* better handling of concurrent http servers ([#57](https://github.com/vsiravar/common-tests-public/issues/57)) ([0ae6182](https://github.com/vsiravar/common-tests-public/commit/0ae6182b53beffdc279ffc1df7d539fe8205fd56))
+* Fix container filepath to make it platform independent ([#80](https://github.com/vsiravar/common-tests-public/issues/80)) ([5496e94](https://github.com/vsiravar/common-tests-public/commit/5496e94a7ec5db81f58e787a7d6dcf29efab7e37))
+* Fix run -e/--env tests and add missing variable redefinition ([#22](https://github.com/vsiravar/common-tests-public/issues/22)) ([84960f8](https://github.com/vsiravar/common-tests-public/commit/84960f89215881460c3b6c462e02cd1f53f74878))
+* Fix tests to match nerdctl 1.2.1 outputs ([#50](https://github.com/vsiravar/common-tests-public/issues/50)) ([3d9b4f4](https://github.com/vsiravar/common-tests-public/commit/3d9b4f4794d8df965dd2d611b2bed59aabff7dc2))
+* increase acceptable time deviation for stop tests with -t ([#81](https://github.com/vsiravar/common-tests-public/issues/81)) ([c292f6d](https://github.com/vsiravar/common-tests-public/commit/c292f6d8f79cf51b0ec2b5ec42db186e9e5661df))
+* make tests compatible with nerdctlv1.5 ([#75](https://github.com/vsiravar/common-tests-public/issues/75)) ([6876cd0](https://github.com/vsiravar/common-tests-public/commit/6876cd046728c28f527b56770fd04735f7dc7067))
+* Switch from netcat to nginx for testing publish flag in run command ([7a6a6c3](https://github.com/vsiravar/common-tests-public/commit/7a6a6c36d11796b2048d90353f06d25013b132a8))
+* Update logs test args ([#83](https://github.com/vsiravar/common-tests-public/issues/83)) ([011c2e3](https://github.com/vsiravar/common-tests-public/commit/011c2e335c4da40842bfacccab24779ce63aaa04))
+
+
+### Build System or External Dependencies
+
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.10.0 to 2.11.0 ([#71](https://github.com/vsiravar/common-tests-public/issues/71)) ([45e9414](https://github.com/vsiravar/common-tests-public/commit/45e9414dba27581a286784e16ff0ab54301220b2))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.11.0 to 2.12.0 ([#78](https://github.com/vsiravar/common-tests-public/issues/78)) ([7bae5c1](https://github.com/vsiravar/common-tests-public/commit/7bae5c16524336711c8258ab27c59c54ebf399cd))
+* **deps:** Bump github.com/onsi/ginkgo/v2 from 2.12.0 to 2.12.1 ([#85](https://github.com/vsiravar/common-tests-public/issues/85)) ([89d408f](https://github.com/vsiravar/common-tests-public/commit/89d408f34ceb0be386cc0ff780aaa52638b267d5))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.5.0 to 2.5.1 ([#3](https://github.com/vsiravar/common-tests-public/issues/3)) ([abf1f07](https://github.com/vsiravar/common-tests-public/commit/abf1f07985e32a173032d7f49d9c4e621576ff47))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.5.1 to 2.6.0 ([#12](https://github.com/vsiravar/common-tests-public/issues/12)) ([a676453](https://github.com/vsiravar/common-tests-public/commit/a676453d03acf86b361202fb3d7e5414b66beb0d))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.6.0 to 2.6.1 ([#15](https://github.com/vsiravar/common-tests-public/issues/15)) ([ab4e024](https://github.com/vsiravar/common-tests-public/commit/ab4e024075b03b34bd125d96d21c8361c6851f4f))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.6.1 to 2.7.0 ([#19](https://github.com/vsiravar/common-tests-public/issues/19)) ([e695dc5](https://github.com/vsiravar/common-tests-public/commit/e695dc51448406c809adb6395f8fa2db7cc0a9bd))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.7.0 to 2.8.0 ([#27](https://github.com/vsiravar/common-tests-public/issues/27)) ([723b70e](https://github.com/vsiravar/common-tests-public/commit/723b70ed612517d279b1e851b755965b9d76bc27))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.8.0 to 2.8.3 ([#37](https://github.com/vsiravar/common-tests-public/issues/37)) ([7b76f03](https://github.com/vsiravar/common-tests-public/commit/7b76f03b77bb7a39b0a68aa6ad75942e67998e29))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.8.3 to 2.8.4 ([#41](https://github.com/vsiravar/common-tests-public/issues/41)) ([a9476c1](https://github.com/vsiravar/common-tests-public/commit/a9476c13bc4febd40a4f98cc8e6f8eebc04cfb5e))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.9.2 to 2.9.5 ([#62](https://github.com/vsiravar/common-tests-public/issues/62)) ([0bd0901](https://github.com/vsiravar/common-tests-public/commit/0bd090128548cdeb8cf381c8c53b2177fe009ab6))
+* **deps:** bump github.com/onsi/ginkgo/v2 from 2.9.5 to 2.10.0 ([#69](https://github.com/vsiravar/common-tests-public/issues/69)) ([a6ad55d](https://github.com/vsiravar/common-tests-public/commit/a6ad55dd08ee0d3316f51891a795e4f4f5dc9dcd))
+* **deps:** bump github.com/onsi/gomega from 1.24.1 to 1.24.2 ([#14](https://github.com/vsiravar/common-tests-public/issues/14)) ([b4a7aa2](https://github.com/vsiravar/common-tests-public/commit/b4a7aa2474ecc97bdb1a2283b04ea43ca2c769f7))
+* **deps:** bump github.com/onsi/gomega from 1.24.2 to 1.26.0 ([#24](https://github.com/vsiravar/common-tests-public/issues/24)) ([33e2c83](https://github.com/vsiravar/common-tests-public/commit/33e2c8358089ad58edc5715909215196a18fb410))
+* **deps:** bump github.com/onsi/gomega from 1.26.0 to 1.27.1 ([#36](https://github.com/vsiravar/common-tests-public/issues/36)) ([e5a684e](https://github.com/vsiravar/common-tests-public/commit/e5a684eada0303629645d600cf94cc49e8fbdba2))
+* **deps:** bump github.com/onsi/gomega from 1.27.1 to 1.27.2 ([#40](https://github.com/vsiravar/common-tests-public/issues/40)) ([e8fc71a](https://github.com/vsiravar/common-tests-public/commit/e8fc71a9c94afe2084bfdb129de5f5828adfa8b8))
+* **deps:** Bump github.com/onsi/gomega from 1.27.10 to 1.28.0 ([#90](https://github.com/vsiravar/common-tests-public/issues/90)) ([d8a87bb](https://github.com/vsiravar/common-tests-public/commit/d8a87bb07ca00770c75fdd0dac7914c3304fbd37))
+* **deps:** bump github.com/onsi/gomega from 1.27.2 to 1.27.4 ([#48](https://github.com/vsiravar/common-tests-public/issues/48)) ([f113e7b](https://github.com/vsiravar/common-tests-public/commit/f113e7b2f65a66982773079a30dee06dd5e6e326))
+* **deps:** bump github.com/onsi/gomega from 1.27.4 to 1.27.5 ([#52](https://github.com/vsiravar/common-tests-public/issues/52)) ([bd056e7](https://github.com/vsiravar/common-tests-public/commit/bd056e7d947a2432611ca923585422c399c56395))
+* **deps:** bump github.com/onsi/gomega from 1.27.5 to 1.27.6 ([#54](https://github.com/vsiravar/common-tests-public/issues/54)) ([72120b5](https://github.com/vsiravar/common-tests-public/commit/72120b57b4c70945df307a1aea80d609e7c27a95))
+* **deps:** bump github.com/onsi/gomega from 1.27.6 to 1.27.7 ([#65](https://github.com/vsiravar/common-tests-public/issues/65)) ([590a984](https://github.com/vsiravar/common-tests-public/commit/590a9845b46218c1c8d669a5e5a9269dfc86a232))
+* **deps:** bump github.com/onsi/gomega from 1.27.7 to 1.27.8 ([#68](https://github.com/vsiravar/common-tests-public/issues/68)) ([6c72750](https://github.com/vsiravar/common-tests-public/commit/6c7275007bf34fb6ddecc4013c16f1d79ff6d1d0))
+* **deps:** bump github.com/onsi/gomega from 1.27.8 to 1.27.10 ([#74](https://github.com/vsiravar/common-tests-public/issues/74)) ([f0f6fa1](https://github.com/vsiravar/common-tests-public/commit/f0f6fa1a053db57b741068b208d463cb729a274f))
+* **deps:** bump golang.org/x/net from 0.5.0 to 0.7.0 ([#34](https://github.com/vsiravar/common-tests-public/issues/34)) ([f218705](https://github.com/vsiravar/common-tests-public/commit/f218705a28f93d8ae6463b75662c3ff108433e7b))
+
 ## [0.7.7](https://github.com/runfinch/common-tests/compare/v0.7.6...v0.7.7) (2023-10-05)
 
 
